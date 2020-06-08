@@ -21,4 +21,59 @@ body {
   font-family: 'icofont';
   src: url(../asets/fonts/icofont.woff) format("woff");
 }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  width: 67%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.header__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  display: inline-block;
+}
+
+.header__navigation {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #314584;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.header .navigation__list {
+  list-style-type: none;
+}
+
+.header .navigation__item {
+  display: inline-block;
+  text-decoration: none;
+  padding: .8rem;
+}
+
+.header .navigation__link {
+  text-decoration: none;
+}
+
+.header__contact {
+  display: inline-block;
+}
 /*# sourceMappingURL=main.css.map */
