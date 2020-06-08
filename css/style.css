@@ -1,10 +1,17 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
 
-body {
-  box-sizing: border-box; }
+html {
+  font-size: 62.5%; }
 
-nav {
-  background-color: lightblue; }
+body {
+  box-sizing: border-box;
+  font-family: icofont , monospace, sans-serif; }
+
+@font-face {
+  font-family: 'icofont';
+  src: url(../asets/fonts/icofont.woff) format("woff"); }
