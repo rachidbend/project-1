@@ -1,52 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "abstract/functions";
 
-body {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-}
+@import "base/base";
+@import "base/typography";
+@import "base/utilitties";
+@import "base/animations";
 
-.box {
-    height: 300px;
-    width: 300px;
-    background-color: lightsalmon;
+@import "layout/grid";
+@import "layout/header";
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(5deg);
-    box-shadow: 0rem 2rem 5rem rgba(#000, .2);
-    animation: shadow 4s infinite ease-in-out both alternate;
-    
-}
-
-
-@keyframes shadow{
-    0% {
-        box-shadow: -2rem -2rem 5rem rgba(#000, .3);
-        transform: translate(-50%, -50%) rotate(5deg);
-    }
-
-    25% {
-        box-shadow: -2rem 2rem 5rem rgba(#000, .3);
-    }
-
-    50% {
-        box-shadow: 2rem 2rem 5rem rgba(#000, .3);
-    }
-
-    75% {
-        box-shadow: 2rem -2rem 5rem rgba(#000, .3);
-    }
-
-    100% {
-        box-shadow: -2rem -2rem 5rem rgba(#000, .3);
-        transform: translate(-50%, -50%) rotate(-5deg);
-    }
-}
+@import "pages/home";   
