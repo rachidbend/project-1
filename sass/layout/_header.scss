@@ -18,18 +18,15 @@
         display: inline-block;
     }
 
-    &__navigation {
+    
+
+    .navigation {
         display: inline-block;
         font-size: 1.6rem;
         font-weight: 600;
-        color: $color-primary;
         text-transform: capitalize;
         text-align: center;
         
-    }
-
-    .navigation {
-
         &__list {
             list-style-type: none;
         }
@@ -37,12 +34,18 @@
         &__item {
             display: inline-block;
                 text-decoration: none;
-                padding: .8rem;
-
+                
         }
 
         &__link {
             text-decoration: none;
+            color: $color-primary;
+            padding: .8rem;
+            transition: all .15s;
+
+            &:hover {
+                color: $color-secondary;
+            }
         }
     }
 

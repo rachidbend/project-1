@@ -50,11 +50,10 @@ body {
   display: inline-block;
 }
 
-.header__navigation {
+.header .navigation {
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 600;
-  color: #314584;
   text-transform: capitalize;
   text-align: center;
 }
@@ -66,11 +65,18 @@ body {
 .header .navigation__item {
   display: inline-block;
   text-decoration: none;
-  padding: .8rem;
 }
 
 .header .navigation__link {
   text-decoration: none;
+  color: #314584;
+  padding: .8rem;
+  -webkit-transition: all .15s;
+  transition: all .15s;
+}
+
+.header .navigation__link:hover {
+  color: #FF3946;
 }
 
 .header__contact {
