@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: icofont , monospace, sans-serif;
+}
+
+@font-face {
+  font-family: 'icofont';
+  src: url(../asets/fonts/icofont.woff) format("woff");
+}
+/*# sourceMappingURL=main.css.map */

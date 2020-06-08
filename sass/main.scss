@@ -1,15 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "abstract/functions";
 
-body {
-    box-sizing: border-box;
+@import "base/base";
+@import "base/typography";
+@import "base/utilitties";
+@import "base/animations";
 
-}
+@import "layout/grid";
+@import "layout/header";
 
-nav {
-    background-color: lightblue;
-    
-}
+@import "pages/home";   
