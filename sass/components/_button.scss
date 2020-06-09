@@ -1,0 +1,23 @@
+.btn {
+
+    &--contact {
+        text-decoration: none;
+        font-size: 1.9rem;
+        text-transform: capitalize;
+        color: $color-secondary;
+        font-weight: 600;
+        letter-spacing: -0.1rem;
+        box-shadow: 0rem .5rem 1rem rgba($color-black, .05);
+        background-color: $color-white;
+        padding: 1.7rem 4.4rem;
+        
+        border-radius: 3px;
+        transition: all .4s;
+        backface-visibility: hidden;
+        
+        &:hover {
+            color: $color-white;
+            background-color: $color-secondary;
+        }
+    }
+}

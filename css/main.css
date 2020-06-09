@@ -24,11 +24,9 @@ body {
 
 .header {
   width: 100%;
-  height: 100vh;
-  background-color: #fff;
-  width: 67%;
-  margin: 0 auto;
-  margin-top: 4rem;
+  height: 90vh;
+  width: 100%;
+  position: relative;
 }
 
 .header__head {
@@ -44,10 +42,18 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 6rem;
+  width: 60%;
+  padding: 0 1rem;
 }
 
 .header__logo {
   display: inline-block;
+}
+
+.header__logo img {
+  width: 6.3rem;
 }
 
 .header .navigation {
@@ -56,6 +62,9 @@ body {
   font-weight: 600;
   text-transform: capitalize;
   text-align: center;
+  margin-top: .3rem;
+  margin-left: 3rem;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .header .navigation__list {
@@ -67,12 +76,27 @@ body {
   text-decoration: none;
 }
 
+.header .navigation__item:not(:last-child) {
+  margin-left: 1.5rem;
+}
+
 .header .navigation__link {
   text-decoration: none;
   color: #314584;
-  padding: .8rem;
+  padding: .6rem;
   -webkit-transition: all .15s;
   transition: all .15s;
+  letter-spacing: 0.1rem;
+}
+
+.header .navigation__link--arrow-down {
+  display: inline-block;
+  width: 0rem;
+  border-top: 0.5rem solid #000;
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+  position: relative;
+  top: -.4rem;
 }
 
 .header .navigation__link:hover {
@@ -81,5 +105,36 @@ body {
 
 .header__contact {
   display: inline-block;
+}
+
+.header__background {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+.btn--contact {
+  text-decoration: none;
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  color: #FF3946;
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  -webkit-box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  padding: 1.7rem 4.4rem;
+  border-radius: 3px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.btn--contact:hover {
+  color: #fff;
+  background-color: #FF3946;
 }
 /*# sourceMappingURL=main.css.map */
