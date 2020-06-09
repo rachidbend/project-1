@@ -1,15 +1,22 @@
 .btn {
 
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 1.6rem 4.3rem;
+    transition: all .4s;
+    backface-visibility: hidden;
+
     &--contact {
         text-decoration: none;
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         text-transform: capitalize;
         color: $color-secondary;
         font-weight: 600;
         letter-spacing: -0.1rem;
         box-shadow: 0rem .5rem 1rem rgba($color-black, .05);
         background-color: $color-white;
-        padding: 1.7rem 4.4rem;
+        padding: 1.6rem 4.3rem;
         
         border-radius: 3px;
         transition: all .4s;
@@ -18,6 +25,38 @@
         &:hover {
             color: $color-white;
             background-color: $color-secondary;
+        }
+    }
+
+    &__container {
+        margin-top: 5rem;
+    }
+
+    &--primary {
+        background-color: $color-secondary;
+        font-size: 1.6rem;
+        border-radius: 3rem;
+        color: $color-white;
+        border: 2px solid $color-secondary;
+        padding: .9em 2em;
+        text-transform: initial;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-primary;
+        }
+    }
+
+    &--secondary {
+
+        &-blue {
+
+            font-size: 1.6rem;
+            color: $color-primary;
+            
+            &:hover {
+                color: $color-secondary;
+            }
         }
     }
 }

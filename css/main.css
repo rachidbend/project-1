@@ -15,6 +15,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: icofont , monospace, sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 @font-face {
@@ -44,8 +45,7 @@ body {
           justify-content: space-between;
   margin: 0 auto;
   margin-top: 6rem;
-  width: 60%;
-  padding: 0 1rem;
+  max-width: 101rem;
 }
 
 .header__logo {
@@ -64,7 +64,6 @@ body {
   text-align: center;
   margin-top: .3rem;
   margin-left: 3rem;
-  font-family: 'Work Sans', sans-serif;
 }
 
 .header .navigation__list {
@@ -112,9 +111,35 @@ body {
   z-index: -1;
 }
 
+.header__content {
+  width: 101rem;
+  margin: 0 auto;
+  margin-top: 23.3rem;
+}
+
+.header__text {
+  margin-top: 2.4rem;
+  width: 48%;
+  font-size: 1.6rem;
+  color: #6E757A;
+  line-height: 1.8;
+  letter-spacing: .5px;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 1.6rem 4.3rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
 .btn--contact {
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   text-transform: capitalize;
   color: #FF3946;
   font-weight: 600;
@@ -122,7 +147,7 @@ body {
   -webkit-box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
           box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
   background-color: #fff;
-  padding: 1.7rem 4.4rem;
+  padding: 1.6rem 4.3rem;
   border-radius: 3px;
   -webkit-transition: all .4s;
   transition: all .4s;
@@ -133,5 +158,38 @@ body {
 .btn--contact:hover {
   color: #fff;
   background-color: #FF3946;
+}
+
+.btn__container {
+  margin-top: 5rem;
+}
+
+.btn--primary {
+  background-color: #FF3946;
+  font-size: 1.6rem;
+  border-radius: 3rem;
+  color: #fff;
+  border: 2px solid #FF3946;
+  padding: .9em 2em;
+  text-transform: initial;
+}
+
+.btn--primary:hover {
+  background-color: #fff;
+  color: #314584;
+}
+
+.btn--secondary-blue {
+  font-size: 1.6rem;
+  color: #314584;
+}
+
+.btn--secondary-blue:hover {
+  color: #FF3946;
+}
+
+.heading--primary {
+  font-size: 6.5rem;
+  color: #314584;
 }
 /*# sourceMappingURL=main.css.map */

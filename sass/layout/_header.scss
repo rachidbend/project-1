@@ -4,6 +4,8 @@
     width: 100%;
     position: relative;
   
+
+    // THIS STYLING IS FOR THE UPPER HEADER: LOGO, NAV, CONTACT BUTTON
     &__head {
         display: flex;
         flex-direction: row;
@@ -11,8 +13,8 @@
         justify-content: space-between;
         margin: 0 auto;
         margin-top: 6rem;
-        width: 60%;
-        padding: 0 1rem;
+        max-width: $default-width;
+        
     }
 
     &__logo {
@@ -31,7 +33,6 @@
         text-align: center;
         margin-top: .3rem;
         margin-left: 3rem;
-        font-family: 'Work Sans', sans-serif;
         
         &__list {
             list-style-type: none;
@@ -39,8 +40,8 @@
 
         &__item {
             display: inline-block;
-                text-decoration: none;        
-                margin-left: 1.5rem;  
+            text-decoration: none;        
+            margin-left: 1.5rem;  
         }
 
         &__link {
@@ -78,4 +79,24 @@
         width: 50%;
         z-index: -1;
     }
+
+    // THIS STYLING IS FOR THE MAIN CONTENT OF THE HEADER
+
+    &__content {
+        width: $default-width;
+        margin: 0 auto;
+        margin-top: 23.3rem;
+        
+       
+    }
+
+    &__text {
+        margin-top: 2.4rem;
+        width: 48%;
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        line-height: 1.8;
+        letter-spacing: .5px;
+    }
+
 }
