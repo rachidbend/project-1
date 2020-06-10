@@ -23,6 +23,42 @@ body {
   src: url(../asets/fonts/icofont.woff) format("woff");
 }
 
+.row {
+  width: 101rem;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row .col-1-of-2 {
+  display: inline-block;
+  float: left;
+  width: calc((100% - 6rem) / 2);
+}
+
+.row .col-1-of-2:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.row .col-1-of-3 {
+  display: inline-block;
+  float: left;
+  width: calc((100% - ( 6rem * 2 )) / 3);
+}
+
+.row .col-1-of-3:not(:last-child) {
+  margin-right: 6rem;
+}
+
 .header {
   width: 100%;
   height: 90vh;
@@ -143,7 +179,7 @@ body {
   text-transform: capitalize;
   color: #FF3946;
   font-weight: 600;
-  letter-spacing: -0.1rem;
+  letter-spacing: 0rem;
   -webkit-box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
           box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
   background-color: #fff;
