@@ -13,5 +13,16 @@
         line-height: 1.3;
         letter-spacing: 1px;
         
+        &-about {
+            text-transform: capitalize;
+        }
+    }
+
+    &__small--red {
+        font-size: 1.4rem;
+        color: $color-secondary;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
     }
 }
