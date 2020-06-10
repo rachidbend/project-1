@@ -26,7 +26,6 @@ body {
 .row {
   width: 101rem;
   margin: 0 auto;
-  background-color: aqua;
 }
 
 .row:not(:last-child) {
@@ -40,23 +39,21 @@ body {
 }
 
 .row .col-1-of-2 {
-  display: inline-block;
   float: left;
-  width: calc((100% - 6rem) / 2);
+  width: calc((100% - 4rem) / 2);
 }
 
 .row .col-1-of-2:not(:last-child) {
-  margin-right: 6rem;
+  margin-right: 4rem;
 }
 
 .row .col-1-of-3 {
-  display: inline-block;
   float: left;
-  width: calc((100% - ( 6rem * 2 )) / 3);
+  width: calc((100% - ( 4rem * 2 )) / 3);
 }
 
 .row .col-1-of-3:not(:last-child) {
-  margin-right: 6rem;
+  margin-right: 4rem;
 }
 
 .header {
@@ -162,6 +159,28 @@ body {
   letter-spacing: .5px;
 }
 
+.about {
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+  position: relative;
+}
+
+.about__background {
+  position: absolute;
+  width: 14%;
+}
+
+.about__background--1 {
+  top: 0rem;
+  left: 0;
+}
+
+.about__background--2 {
+  top: 20rem;
+  right: 0;
+  width: 17%;
+}
+
 .btn {
   text-decoration: none;
   text-transform: capitalize;
@@ -224,8 +243,49 @@ body {
   color: #FF3946;
 }
 
+.btn__about {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
 .heading--primary {
   font-size: 6.5rem;
   color: #314584;
+}
+
+.heading--secondary {
+  color: #314584;
+  font-size: 3.8rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+.card {
+  -webkit-box-shadow: 0rem 0.3rem 0.7rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0rem 0.3rem 0.7rem rgba(0, 0, 0, 0.15);
+  padding: 4rem;
+  height: 36rem;
+}
+
+.card__icon {
+  width: 5rem;
+}
+
+.card__icon--2 {
+  width: 6rem;
+}
+
+.card__heading {
+  color: #314584;
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+
+.card__text {
+  font-size: 1.4rem;
+  color: #314584;
+  margin-top: 2rem;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=main.css.map */

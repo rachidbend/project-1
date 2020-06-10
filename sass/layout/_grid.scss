@@ -1,9 +1,7 @@
 .row {
     width: $default-width;  
     margin: 0 auto;
-    background-color: aqua;
     
-
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
@@ -11,7 +9,6 @@
     @include clearfix;
 
     .col-1-of-2 {
-        display: inline-block;
         float: left;
         width: calc((100% - #{$gutter-horizontal}) / 2);
 
@@ -21,7 +18,6 @@
     }
 
     .col-1-of-3 {
-        display: inline-block;
         float: left;
         width: calc((100% - ( #{$gutter-horizontal} * 2 )) / 3);
 
