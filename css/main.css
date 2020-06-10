@@ -196,6 +196,82 @@ body {
   margin-top: 2rem;
 }
 
+.portfolio .row:not(:last-child) {
+  margin-bottom: 2.8rem;
+}
+
+.portfolio .col-1-of-3:not(:last-child) {
+  margin-right: 2.8rem;
+  width: calc((100% - ( 2.8rem * 2 )) / 3);
+}
+
+.portfolio__item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__item img {
+  width: 100%;
+}
+
+.portfolio__item .figcaption__container {
+  width: 0rem;
+  height: 0rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: radial-gradient(rgba(49, 69, 132, 0.9) 0%, rgba(49, 69, 132, 0.9) 100%);
+  -webkit-transition: all 0.4s cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  transition: all 0.4s cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  border-radius: 50%;
+}
+
+.portfolio__item figcaption {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  -webkit-transition: all 0.4s cubic-bezier(0.71, 0.05, 0.29, 0.9) 0.2s;
+  transition: all 0.4s cubic-bezier(0.71, 0.05, 0.29, 0.9) 0.2s;
+}
+
+.portfolio__item:hover .figcaption__container {
+  width: 40rem;
+  height: 40rem;
+}
+
+.portfolio__item:hover figcaption {
+  top: 50%;
+  opacity: 1;
+}
+
+.portfolio .hide-toggle {
+  display: none;
+}
+
+.portfolio__toggle {
+  text-align: center;
+}
+
+.portfolio__toggle input {
+  visibility: visible;
+}
+
+.portfolio__toggle label {
+  font-weight: 600;
+}
+
+.portfolio .portfolio__toggle--checkbox:checked, .portfolio hide-toggle {
+  display: block;
+}
+
 .btn {
   text-decoration: none;
   text-transform: capitalize;
@@ -277,6 +353,10 @@ body {
 
 .heading--secondary-about {
   text-transform: capitalize;
+}
+
+.heading--secondary-portfolio {
+  margin-bottom: 4rem;
 }
 
 .heading__small--red {

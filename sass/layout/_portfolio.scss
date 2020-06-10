@@ -1,0 +1,79 @@
+.portfolio {
+
+    
+    .row:not(:last-child) {
+        margin-bottom: 2.8rem ;
+    }
+    .col-1-of-3:not(:last-child) {
+        margin-right: 2.8rem;
+        width: calc((100% - ( #{2.8rem} * 2 )) / 3);
+    }
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        .figcaption__container {
+
+            width: 0rem;
+            height: 0rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) ;
+            background-image: radial-gradient(rgba($color-primary, .9) 0%, rgba($color-primary, .9) 100%);
+            transition: all .4s cubic-bezier(0.71, 0.05, 0.29, 0.9);
+            border-radius: 50%;                 
+        }
+
+            figcaption {
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                font-size: 1.6rem;
+                color: $color-white;
+                font-weight: 600;
+                transition: all .4s cubic-bezier(0.71, 0.05, 0.29, 0.9) .2s;
+            }
+
+            &:hover {
+                .figcaption__container {
+                    width: 40rem;
+                    height: 40rem;
+                }
+
+                figcaption {
+                    top: 50%;
+                    opacity: 1;
+                }
+            }
+    }
+
+    .hide-toggle {
+        display: none;
+    }
+    
+    &__toggle {
+        text-align: center;
+        
+        input {
+            visibility: visible;
+        }
+
+        label {
+            font-weight: 600;
+        }
+    }
+
+    .portfolio__toggle--checkbox:checked, hide-toggle{
+        
+        display: block;
+        
+    }
+}
