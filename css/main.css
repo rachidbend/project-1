@@ -261,15 +261,11 @@ body {
 }
 
 .portfolio__toggle input {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .portfolio__toggle label {
   font-weight: 600;
-}
-
-.portfolio .portfolio__toggle--checkbox:checked, .portfolio hide-toggle {
-  display: block;
 }
 
 .btn {

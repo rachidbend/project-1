@@ -1,6 +1,6 @@
 .portfolio {
 
-    
+
     .row:not(:last-child) {
         margin-bottom: 2.8rem ;
     }
@@ -63,7 +63,7 @@
         text-align: center;
         
         input {
-            visibility: visible;
+            visibility: hidden;
         }
 
         label {
@@ -71,9 +71,5 @@
         }
     }
 
-    .portfolio__toggle--checkbox:checked, hide-toggle{
-        
-        display: block;
-        
-    }
+    
 }
