@@ -128,7 +128,8 @@ body {
   top: -.4rem;
 }
 
-.header .navigation__link:hover {
+.header .navigation__link:hover, .header .navigation__link:focus,
+.header .navigation__link :visited {
   color: #FF3946;
 }
 
@@ -159,6 +160,43 @@ body {
   letter-spacing: .5px;
 }
 
+.header .language {
+  position: relative;
+}
+
+.header .language .lang {
+  position: absolute;
+  font-size: 1.7rem;
+  font-weight: 500;
+  top: 4rem;
+  padding: 2rem 5rem;
+  background-color: #314584;
+  color: #fff;
+  border-radius: .6rem;
+  display: none;
+}
+
+.header .language .lang__item {
+  padding: .5rem;
+  list-style-type: none;
+}
+
+.header .language .lang__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.header .language .lang__item:hover {
+  color: #FF3946;
+}
+
+.header .language .languages {
+  visibility: hidden;
+}
+
+.header .language .languages:checked ~ .lang {
+  display: block;
+}
+
 .about {
   margin-top: 14rem;
   margin-bottom: 14rem;
@@ -168,6 +206,7 @@ body {
 .about__background {
   position: absolute;
   width: 14%;
+  z-index: -1;
 }
 
 .about__background--1 {
@@ -369,6 +408,7 @@ body {
           box-shadow: 0rem 0.3rem 0.7rem rgba(0, 0, 0, 0.15);
   padding: 4rem;
   height: 36rem;
+  background-color: #fff;
 }
 
 .card__icon {
